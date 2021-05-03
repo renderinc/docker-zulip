@@ -28,7 +28,7 @@ WORKDIR /home/zulip
 # You can specify these in docker-compose.yml or with
 #   docker build --build-args "ZULIP_GIT_REF=git_branch_name" .
 ARG ZULIP_GIT_URL=https://github.com/zulip/zulip.git
-ARG ZULIP_GIT_REF=3.4
+ARG ZULIP_GIT_REF=c9f5946239e06c61bf612c37d1032b933cb05e61
 
 RUN git clone "$ZULIP_GIT_URL" && \
     cd zulip && \
